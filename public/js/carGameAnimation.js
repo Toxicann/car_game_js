@@ -11,6 +11,9 @@ class CarGameAnimation {
     score.style.display = "block";
     var scoreCount = 1;
 
+    localStorage.HighCount =
+      localStorage.HighCount === undefined ? 0 : localStorage.HighCount;
+
     //initialization function
     this.init = function () {
       Hscore.style.display = "none";
