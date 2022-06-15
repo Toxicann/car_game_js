@@ -134,7 +134,8 @@ class CarGameAnimation {
         car.y += speed;
         if (car.y >= ROAD_DISPLAY_HEIGHT - CAR_HEIGHT) {
           scoreCount += i;
-          console.log(localStorage.HighCount, scoreCount);
+          // console.log(localStorage.HighCount, scoreCount);
+
           if (localStorage.HighCount < scoreCount) {
             localStorage.HighCount = scoreCount;
           }
